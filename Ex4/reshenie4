@@ -1,0 +1,8 @@
+Pravim registraciq v git
+sudo apt install git
+git config --global user.name "imeto"
+git config --global user.email "emaila"
+git clone +linka ot direktoriqta koqto suzdadohme v saita
+git add -all
+git commit -m "Zadachi"
+git push

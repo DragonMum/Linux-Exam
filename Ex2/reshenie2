@@ -1,0 +1,13 @@
+adduser examuser
+groupadd examgroup
+groupadd strypes
+usermod -a -G examuser examgroup
+usermod -a -G examuser strypes
+sudo -sH
+cd ~
+cd /etc/
+cp passwd /home/lili
+cd ~
+chown examuser:examgroup passwd
+chmod 762 passwd
+chmod u=rwx,g=rx,o=w passwd
